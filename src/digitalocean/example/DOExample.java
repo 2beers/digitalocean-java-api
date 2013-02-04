@@ -17,10 +17,8 @@ public class DOExample {
 		String apiKey="";
 		
 		DigitalOceanAPI  api=new DigitalOceanAPI(clientKey,apiKey);
-		
 		try {
 			api.showAllActiveDroplets();
-			System.out.println(api.allSizes());
 		} catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
